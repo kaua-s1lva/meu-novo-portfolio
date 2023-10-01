@@ -16,14 +16,17 @@ export function Navbar () {
 
     return (
         <Container>
-            <div className="py-[19.2px]">
-                <Image src={logo} alt="logo" width={55}/>
-            </div>
-            <div>
-                <ul className="flex justify-center gap-10 font-[500] text-[19px] items-center">
-                    <li><Link scroll={true} href="#project" onClick={handleClick} className="text-primary-dark-green hover:text-primary-green transition duration-500 pb-2">Projetos</Link></li>
-                    <li><a href="#"><ItemButton content="Diga Olá" paddingX={20} paddingY={5} /></a></li>
-                </ul>
+            <div className="flex items-center justify-between">
+                <div className="py-[19.2px]">
+                    <Image src={logo} alt="logo" width={55}/>
+                </div>
+                <div>
+                    <ul className="flex justify-center gap-10 font-[500] text-[19px] items-center">
+                        <li><Link scroll={true} href="#project" onClick={handleClick} className="text-primary-dark-green hover:text-primary-green transition duration-500 pb-2">Projetos</Link></li>
+                        <li><a href="#"><ItemButton content="Diga Olá" paddingX={20} paddingY={5} /></a></li>
+                    </ul>
+                </div>
+
             </div>
         </Container>
     )

@@ -4,7 +4,7 @@ export function SectionAbout () {
     return (
         <div className="w-full bg-primary-green">
             <Container>
-                <div className="text-white text-center w-[80%] m-auto mt-[160px] mb-[260px]">
+                <div className="text-white text-center w-[100%] sm:w-[80%] m-auto pt-[100px] md:pt-[160px] pb-[200px] md:pb-[260px]">
                     <h1 className="text-[25px] font-bold mb-6">Olá, me chamo Kauã. Muito prazer!</h1>
                     <h2 className="text-[21px]">
                     Meu primeiro contato com a programação foi em 2021, quando ainda estava no ensino médio, 
