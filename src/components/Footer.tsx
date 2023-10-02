@@ -8,10 +8,10 @@ import { Container } from "./Container"
 
 export function Footer () {
     return (
-            <div className="bg-primary-green text-white text-center">
-        <Container >
-                <div className="py-20 mt-20">
-                    <Image src={LogoWhite} alt="logo" width={70} className="m-auto py-10"/>
+        <div className="bg-primary-green text-white text-center">
+            <Container >
+                <div className="py-5 md:py-20 mt-0 md:mt-20">
+                    <Image src={LogoWhite} alt="logo" width={70} className="m-auto md:py-10 py-10"/>
                     <p className="text-[22px]">Programando o futuro, um código de cada vez</p>
                     <div className="flex items-center justify-center gap-6 py-10">
                         <ItemFooter image={faPhone} link="tel:+5528999779469"/>
@@ -24,7 +24,7 @@ export function Footer () {
                     <p>&copy; Copyright - todos os direitos reservados</p>
                 </div>
 
-        </Container>
-            </div>
+            </Container>
+        </div>
     )
 }

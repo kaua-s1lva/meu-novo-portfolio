@@ -8,11 +8,11 @@ import { ItemButton } from "./ItemButton";
 
 export function SectionProject () {
     return (
-        <div className="py-[70px] border-b-2" id="project">
+        <div className="md:py-[70px] py-[0px] border-b-2" id="project">
             <h1 className="text-[33px] text-center mb-6 font-semibold">Meus Projetos</h1>
             <h2 className="text-[21px] text-center mb-6">Aqui estão alguns dos meus projetos. Deseja saber mais? <a href="#" className="text-primary-green">Contate-me</a></h2>
             <Container>
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[2.3%] py-16 w-[100%]">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[2.3%] md:py-16 py-0 w-[100%]">
                 
                     <ItemProject image={ItauLogo} color="primary-itau-color" text="Site desenvolvido com base no design do Banco Itaú utilizando Next.js" />
                     <ItemProject image={labTestesLogo} color="primary-labtestes-color" text="Aplicar manutenção no site desenvolvido em Laravel" />
@@ -20,7 +20,7 @@ export function SectionProject () {
                 </div>
                     
             </Container>
-            <div className="w-full flex items-center justify-center text-[21px] mt-[32px]">
+            <div className="w-full flex items-center justify-center text-[21px] mt-[32px] mb-[60px]">
                 <a href="https://github.com/kaua-s1lva" target="_blank">
                     <ItemButton content="Confira meu GitHub" paddingX={30} paddingY={11} icon={faGithub}/>
                 </a>

@@ -1,15 +1,12 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container } from "./Container";
 
-import { faPhone, faEnvelope, faMessage } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { ItemContact } from "./ItemContact";
+import { faMessage } from '@fortawesome/free-solid-svg-icons'
 import { ItemButton } from "./ItemButton";
 
 export function SectionContact () {
     return (
         <Container>
-            <div className="py-[70px] w-full">
+            <div className="py-[60px] md:py-[70px] w-full">
                 <h1 className="text-[30px] text-center pb-6">Interessado em colaborar comigo?</h1>
                 <h2 className="text-[21px] text-center pb-6">Entre em contato:</h2>
                 <div className="w-full flex justify-center items-center text-[21px] mt-8">

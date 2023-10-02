@@ -7,14 +7,14 @@ export function SectionAbout () {
                 <div className="text-white text-center w-[100%] sm:w-[80%] m-auto pt-[100px] md:pt-[160px] pb-[200px] md:pb-[260px]">
                     <h1 className="text-[25px] font-bold mb-6">Olá, me chamo Kauã. Muito prazer!</h1>
                     <h2 className="text-[21px]">
-                    Meu primeiro contato com a programação foi em 2021, quando ainda estava no ensino médio, 
-                    trabalhando como estagiário no setor financeiro, quando conheci o gerente de TI da empresa, 
-                    ao qual ele me instigou a conhecer melhor a área da tecnologia, onde realizei projetos 
-                    utilizando o PowerBI para otimizar e aprimorar meus trabalhos. Apesar de ter gostado da 
-                    área, só comecei a estudar desenvolvimento web em 2022. 
+                    Meu primeiro encontro com a programação ocorreu em 2021, durante meu período no ensino médio. 
+                    Na época, eu estava atuando como estagiário no departamento financeiro, onde tive a oportunidade de 
+                    conhecer o gerente de TI da empresa. Ele me incentivou a explorar o campo da tecnologia, o que me 
+                    levou a trabalhar em projetos utilizando o PowerBI para otimizar e aprimorar minhas tarefas. Embora 
+                    tenha me interessado pela área, só comecei a me dedicar ao estudo do desenvolvimento web em 2022.
                     <br />
-                    Hoje já entendo de tecnologias voltadas para o Front-end e Back-end. Também gosto de &quot;brincar&quot; 
-                    com design no figma, criando interfaces para projetos pessoais e de amigos.
+                    Atualmente, possuo conhecimentos em tecnologias voltadas para o Front-end e Back-end. Além disso, 
+                    gosto de exercitar minha criatividade no Figma, desenvolvendo interfaces para projetos pessoais e de amigos.
                     </h2>
                 </div>
             </Container>
