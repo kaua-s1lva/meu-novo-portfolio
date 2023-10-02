@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 type Props = {
     hasBorder?: boolean;
+    hasBorderBottom?: boolean;
     image: any;
     title: string;
     contentTitle: string;
@@ -13,6 +14,7 @@ type Props = {
 
 export function ItemAbout ( { 
     hasBorder,
+    hasBorderBottom,
     image, 
     title, 
     contentTitle, 
@@ -22,12 +24,13 @@ export function ItemAbout ( {
     contentTools, 
 }:Props ) {
 
-    const borderClass = hasBorder ? 'border-r border-l' : '';
+    const borderClass = hasBorder ? 'md:border-r md:border-l md:border-b-0 md:border-t-0 border-b border-t ' : '';
+    const borderBottomClass = hasBorderBottom ? 'border-b border-1' : '';
 
     return (
-        <div className={`py-[70px] px-[45px] sm:flex sm:items-center sm:flex-col sm:w-[33.3%] text-[18px] ${borderClass}`}>
-            <div className="w-[70px] h-[70px] rounded-full bg-primary-green flex items-center">
-                <FontAwesomeIcon icon={image} width={40} className=" text-primary-dark-green m-auto"/>
+        <div className={`py-[70px] px-[45px] sm:flex sm:items-center sm:flex-col md:w-[33.3%] text-[18px] ${borderClass}`}>
+            <div className="w-[70px] h-[70px] rounded-full bg-primary-green flex items-center mx-auto">
+                <FontAwesomeIcon icon={image} width={40} className=" text-primary-dark-green m-auto text-center"/>
             </div>
             <h1 className="my-6 text-[24px] text-primary-dark-green text-center">{title}</h1>
             <p className="text-center">{contentTitle}</p>

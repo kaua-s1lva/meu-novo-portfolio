@@ -8,7 +8,7 @@ import {  } from '@fortawesome/free-brands-svg-icons'
 export function SectionSkill () {
     return (
         <Container>
-            <div className="flex justify-center border rounded-3xl relative top-[-100px] bg-white shadow-lg">
+            <div className="flex flex-col md:flex-row justify-center border rounded-3xl relative top-[-100px] bg-white shadow-lg">
 
                 <ItemAbout
                 hasBorder={false}
