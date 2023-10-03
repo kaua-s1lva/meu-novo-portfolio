@@ -1,8 +1,16 @@
+"use client";
+
 import { Container } from "./Container";
+import { motion } from "framer-motion";
 
 export function SectionAbout () {
     return (
-        <div className="w-full bg-primary-green">
+        <motion.div className="relative w-full bg-primary-green"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            exit={{ opacity: 0, scale: 0 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+        >
             <Container>
                 <div className="text-white text-center w-[100%] sm:w-[80%] m-auto pt-[100px] md:pt-[160px] pb-[200px] md:pb-[260px]">
                     <h1 className="text-[25px] font-bold mb-6">Olá, me chamo Kauã. Muito prazer!</h1>
@@ -18,7 +26,10 @@ export function SectionAbout () {
                     </h2>
                 </div>
             </Container>
-        </div>
+
+                
+    
+        </motion.div>
 
     )
 }

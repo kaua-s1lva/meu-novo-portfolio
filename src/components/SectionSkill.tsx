@@ -1,11 +1,19 @@
+"use client";
+
 import { Container } from "./Container";
 
-import CodeBackIcon from "@/img/code-icon.png"
 import { ItemAbout } from "./ItemAbout";
 import { faCode, faTerminal, faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 import {  } from '@fortawesome/free-brands-svg-icons'
 
 export function SectionSkill () {
+
+    const animeProps = {
+        initial: { opacity: 0, y: 100 },
+        whileInView: { opacity: 1, y: 0 },
+        exit: { opacity: 0, y: 100 },
+    }
+
     return (
         <Container>
             <div className="flex flex-col md:flex-row justify-center border rounded-3xl relative top-[-100px] bg-white shadow-lg">
@@ -19,6 +27,8 @@ export function SectionSkill () {
                 contentDescription="HTML, CSS, JavaScript"
                 tools="Dev Tools:"
                 contentTools={["React", "Next", "Bootstrap", "Tailwind", "WordPress", "Elementor"]}
+                {...animeProps}
+                transition={{ duration: 0.5, delay: 0.3 }}
                 />
                 <ItemAbout 
                 hasBorder={true}
@@ -28,7 +38,9 @@ export function SectionSkill () {
                 description="linguagens que domino:"
                 contentDescription="JavaScript, PHP, Python, C, SQL"
                 tools="Dev Tools:"
-                contentTools={["JQuery", "Django", "Laravel"]}
+                contentTools={["JQuery", "Django", "Laravel", "mySQL"]}
+                {...animeProps}
+                transition={{ duration: 0.5, delay: 0.5 }}
                 />
                 <ItemAbout 
                 hasBorder={false}
@@ -39,6 +51,8 @@ export function SectionSkill () {
                 contentDescription="Components, Responsive, Grid, Cores"
                 tools="Dev Tools:"
                 contentTools={["Figma", "Photoshop", "Canva", "Corel Draw"]}
+                {...animeProps}
+                transition={{ duration: 0.5, delay: 0.7 }}
                 />
                 
             </div>

@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 import LogoWhite from "@/img/logo-white.png"
 import { faPhone, faEnvelope, faMessage } from '@fortawesome/free-solid-svg-icons'
@@ -8,7 +11,13 @@ import { Container } from "./Container"
 
 export function Footer () {
     return (
-        <div className="bg-primary-green text-white text-center">
+        <motion.div 
+            className="bg-primary-green text-white text-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            exit={{ opacity: 0, scale: 0 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+        >
             <Container >
                 <div className="py-5 md:py-20 mt-0 md:mt-20">
                     <Image src={LogoWhite} alt="logo" width={70} className="m-auto md:py-10 py-10"/>
@@ -25,6 +34,6 @@ export function Footer () {
                 </div>
 
             </Container>
-        </div>
+        </motion.div>
     )
 }

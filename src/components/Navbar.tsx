@@ -5,6 +5,7 @@ import logo from '@/img/logo.png'
 import { Container } from "./Container"
 import { ItemButton } from "./ItemButton"
 import Link from "next/link"
+import { motion } from "framer-motion";
 
 export function Navbar () {
 
@@ -16,7 +17,12 @@ export function Navbar () {
 
     return (
         <Container>
-            <div className="flex items-center justify-between">
+            <motion.nav 
+                className="relative flex items-center justify-between"
+                initial={{ top: -100 }}
+                animate={{ top: 0 }}
+                transition={{ duration: 0.5 }}
+            >
                 <div className="py-[19.2px]">
                     <Image src={logo} alt="logo" width={55}/>
                 </div>
@@ -27,7 +33,7 @@ export function Navbar () {
                     </ul>
                 </div>
 
-            </div>
+            </motion.nav>
         </Container>
     )
 }
