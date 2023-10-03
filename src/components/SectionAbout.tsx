@@ -9,7 +9,7 @@ export function SectionAbout () {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             exit={{ opacity: 0, scale: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
         >
             <Container>
                 <div className="text-white text-center w-[100%] sm:w-[80%] m-auto pt-[100px] md:pt-[160px] pb-[200px] md:pb-[260px]">

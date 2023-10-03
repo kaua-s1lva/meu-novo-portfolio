@@ -39,7 +39,7 @@ export function SectionHero () {
                         initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0 }}
-                        transition={{ duration: 0.4, delay: 0.2 }}
+                        transition={{ duration: 0.3, delay: 0.2 }}
                     >
                         <Image src={Avatar} alt="user-fig" className="my-8 flex m-auto"/>
                     </motion.div>
@@ -48,7 +48,7 @@ export function SectionHero () {
                     initial={{ opacity: 0, scale: 0 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0 }}
-                    transition={{ duration: 0.5, delay: 0.3 }}
+                    transition={{ duration: 0.3, delay: 0.3 }}
                 >
                     <Image src={ComputerVetor} alt="computer vetor" className="w-[400px]"/>
                 </motion.div>

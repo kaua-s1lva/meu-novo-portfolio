@@ -28,7 +28,7 @@ export function SectionSkill () {
                 tools="Dev Tools:"
                 contentTools={["React", "Next", "Bootstrap", "Tailwind", "WordPress", "Elementor"]}
                 {...animeProps}
-                transition={{ duration: 0.5, delay: 0.3 }}
+                transition={{ duration: 0.3, delay: 0.1 }}
                 />
                 <ItemAbout 
                 hasBorder={true}
@@ -40,7 +40,7 @@ export function SectionSkill () {
                 tools="Dev Tools:"
                 contentTools={["JQuery", "Django", "Laravel", "mySQL"]}
                 {...animeProps}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.3, delay: 0.3 }}
                 />
                 <ItemAbout 
                 hasBorder={false}
@@ -52,7 +52,7 @@ export function SectionSkill () {
                 tools="Dev Tools:"
                 contentTools={["Figma", "Photoshop", "Canva", "Corel Draw"]}
                 {...animeProps}
-                transition={{ duration: 0.5, delay: 0.7 }}
+                transition={{ duration: 0.3, delay: 0.5 }}
                 />
                 
             </div>
