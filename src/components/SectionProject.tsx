@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import ItauLogo from "@/img/itau-logo.png"
 import labTestesLogo from "@/img/lab-testes-logo.png"
+import teamGabProject from "@/img/team-gab-logo.png"
 import { ItemProject } from "./ItemProject";
 import { ItemButton } from "./ItemButton";
 
@@ -31,14 +32,15 @@ export function SectionProject () {
                 {...animeProps}
                 transition={{ duration: 0.5, delay: 0.2 }}
             >
-            Aqui estão alguns dos meus projetos. Deseja saber mais? <a href="#" className="text-primary-green">Contate-me</a>
+            Aqui estão alguns dos meus projetos. Deseja saber mais? <a href="https://wa.me/5528999779469" className="text-primary-green">Contate-me</a>
             </motion.h2>
             <Container>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[2.3%] md:py-16 py-0 w-[100%]">
                 
-                    <ItemProject image={ItauLogo} color="primary-itau-color" delay={0.1} text="Site desenvolvido com base no design do Banco Itaú utilizando Next.js" />
-                    <ItemProject image={labTestesLogo} color="primary-labtestes-color" delay={0.2} text="Aplicar manutenção no site desenvolvido em Laravel" />
-                    
+                    <ItemProject image={ItauLogo} color="primary-itau-color" delay={0.1} href="https://portfolio-itau.vercel.app/" text="Site desenvolvido com base no design do Banco Itaú utilizando Next.js" />
+                    <ItemProject image={labTestesLogo} color="primary-labtestes-color" delay={0.2} href="https://labtestes.labcarreiras.com.br/" text="Aplicar manutenção no site desenvolvido em Laravel" />
+                    <ItemProject image={teamGabProject} color="primary-teamgab-color" delay={0.3} href="https://www.teamgab.com.br/" text="Desenvolvimento do portfólio de consultoria" />
+
                 </div>
                     
             </Container>

@@ -29,7 +29,7 @@ export function Navbar () {
                 <div>
                     <ul className="flex justify-center gap-10 font-[500] text-[19px] items-center">
                         <li><Link scroll={true} href="#project" onClick={handleClick} className="text-primary-dark-green hover:text-primary-green transition duration-500 pb-2">Projetos</Link></li>
-                        <li><a href="#"><ItemButton content="Diga Olá" paddingX={20} paddingY={5} /></a></li>
+                        <li><a href="https://wa.me/5528999779469"><ItemButton content="Diga Olá" paddingX={20} paddingY={5} /></a></li>
                     </ul>
                 </div>
 

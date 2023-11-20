@@ -14,6 +14,7 @@ const config: Config = {
         'second-dark-green': '#005A5B',
         'primary-itau-color': '#004990',
         'primary-labtestes-color': '#F2F5F7',
+        'primary-teamgab-color': '#121212',
       },
     },
   },
