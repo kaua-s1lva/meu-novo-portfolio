@@ -19,6 +19,7 @@ const colorClasses: ColorClassesType = {
     'primary-itau-color': 'bg-primary-itau-color',
     'primary-labtestes-color': 'bg-primary-labtestes-color',
     'primary-teamgab-color': 'bg-primary-teamgab-color',
+    'primary-qvagas-color': 'bg-primary-qvagas-color'
 }
 
 export function ItemProject ( { image, text, color, href, delay }:Props ) {
