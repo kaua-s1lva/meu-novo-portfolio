@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 import ItauLogo from "@/img/itau-logo.png"
 import labTestesLogo from "@/img/lab-testes-logo.png"
 import teamGabProject from "@/img/team-gab-logo.png"
+import cineticaLogo from "@/img/logo-cinetica.ico"
+import qvagasLogo from "@/img/logo-qvagas.webp"
 import { ItemProject } from "./ItemProject";
 import { ItemButton } from "./ItemButton";
 
@@ -40,6 +42,8 @@ export function SectionProject () {
                     <ItemProject image={ItauLogo} color="primary-itau-color" delay={0.1} href="https://portfolio-itau.vercel.app/" text="Site desenvolvido com base no design do Banco Itaú utilizando Next.js" />
                     <ItemProject image={labTestesLogo} color="primary-labtestes-color" delay={0.2} href="https://labtestes.labcarreiras.com.br/" text="Aplicar manutenção no site desenvolvido em Laravel" />
                     <ItemProject image={teamGabProject} color="primary-teamgab-color" delay={0.3} href="https://www.teamgab.com.br/" text="Desenvolvimento do portfólio de consultoria" />
+                    <ItemProject image={qvagasLogo} color="[#2598D3]" delay={0.4} href="https://qvagas.quallitypsi.com.br/" text="Manutenção no site e no portal Qvagas." />                    
+                    <ItemProject image={cineticaLogo} color="primary-labtestes-color" delay={0.5} href="https://portal.cineticajr.com" text="Criação de um sistema de gerencimento da empresa do zero. " />
 
                 </div>
                     
